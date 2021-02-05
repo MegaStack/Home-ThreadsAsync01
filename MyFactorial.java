@@ -31,7 +31,7 @@ public class MyFactorial implements Runnable{
 	public void run() {
 		Thread thr = Thread.currentThread();
 		BigInteger fact = calculateFact(num);
-		System.out.println(thr.getName() + " found factorial digit " + num + " = " + fact);
+		System.out.println(thr.getName() + " found factorial of digit " + num + " = " + fact);
 	}
 	
 }
