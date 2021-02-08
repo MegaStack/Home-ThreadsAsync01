@@ -6,7 +6,7 @@ public class Main {
 		Thread[] thrArray = new Thread[100];
 
 		for (int i = 0; i < thrArray.length; i += 1) {
-			thrArray[i] = new Thread(new MyFactorial(i + 1), "" + i + 1);
+			thrArray[i] = new Thread(new MyFactorial(i + 1), "Thread " + i + 1);
 		}
 
 		for (Thread thread : thrArray) {
